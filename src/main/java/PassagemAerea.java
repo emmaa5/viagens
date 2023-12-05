@@ -6,4 +6,13 @@ public class PassagemAerea extends Reserva {
         super(cliente, destino, dataViagem);
         this.companhiaAerea = companhiaAerea;
     }
+
+    public String getCompanhiaAerea() {
+        return companhiaAerea;
+    }
+
+    public void setCompanhiaAerea(String companhiaAerea) {
+        this.companhiaAerea = companhiaAerea;
+    }
+
 }

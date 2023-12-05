@@ -13,12 +13,24 @@ public class Reserva {
         return cliente;
     }
 
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
+    }
+
     public String getDestino() {
         return destino;
     }
 
+    public void setDestino(String destino) {
+        this.destino = destino;
+    }
+
     public String getDataViagem() {
         return dataViagem;
+    }
+
+    public void setDataViagem(String dataViagem) {
+        this.dataViagem = dataViagem;
     }
 
     public double calcularCustoTotal() {
