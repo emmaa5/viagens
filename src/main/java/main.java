@@ -1,4 +1,3 @@
-import java.lang.runtime.SwitchBootstraps;
 import java.util.Scanner;
 
 import javax.swing.event.SwingPropertyChangeSupport;
@@ -40,7 +39,7 @@ public class main {
                 String dataViagem = leia.nextLine();
                 reserva.setDataViagem(dataViagem);
 
-                System.out.println("Deseja alterar a passagem e hotel?Digite 1 para sim e 0 para não");
+                System.out.println("Deseja alterar a passagem e hotel? Digite 1 para sim e 0 para não");
                 int opcao = leia.nextInt();
                 if (opcao == 0) {
                     System.out.println("Cliente:" + reserva.getCliente());
@@ -55,11 +54,12 @@ public class main {
                     passagem.setCompanhiaAerea(companhiaAerea);
                     System.out.println("Insira o tipo de quarto");
                     String tipoQuarto = leia.nextLine();
-                    System.out.println("Cliente:" + reserva.getCliente());
+                    reservaHotel.setTipoQuarto(tipoQuarto);
+                    System.out.println("Cliente: " + reserva.getCliente());
                     System.out.println("Data da viagem: " + reserva.getDataViagem());
-                    System.out.println("Destino:" + reserva.getDestino());
-                    System.out.println("Companhia aerea:" + passagem.getCompanhiaAerea());
-                    // System.out.println("Tipo de quarto" + reservaHotel.getTipoQuarto());
+                    System.out.println("Destino: " + reserva.getDestino());
+                    System.out.println("Companhia aerea: " + passagem.getCompanhiaAerea());
+                    System.out.println("Tipo de quarto: " + reservaHotel.getTipoQuarto());
 
                 }
 

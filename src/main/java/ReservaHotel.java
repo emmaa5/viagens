@@ -6,4 +6,10 @@ public class ReservaHotel extends Reserva {
         super(cliente, destino, dataViagem);
         this.tipoQuarto = tipoQuarto;
     }
+    public String getTipoQuarto(){
+        return tipoQuarto;
+    }
+    public void setTipoQuarto(String tipoQuarto){
+        this.tipoQuarto = tipoQuarto;
+    }
 }
